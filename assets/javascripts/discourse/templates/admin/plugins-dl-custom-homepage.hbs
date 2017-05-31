@@ -1,0 +1,16 @@
+{{#conditional-loading-spinner condition=model.loading}}
+<div class="customize dl-custom-homepage admin">
+  <div class="admin-container">
+    <div>
+      <h3>{{i18n 'dl_custom_homepage.title'}}</h3>
+      <div class="controls">
+        <button {{action "save" model}} disabled={{disableSave}} class='btn'>{{i18n 'admin.customize.save'}}</button>
+        <span class="saving {{unless model.savingStatus 'hidden'}}">{{model.savingStatus}}</span>
+      </div>
+      <div>
+        {{d-editor value=model.content.raw class="raw-bio"}}
+      </div>
+    </div>
+  </div>
+</div>
+{{/conditional-loading-spinner}}

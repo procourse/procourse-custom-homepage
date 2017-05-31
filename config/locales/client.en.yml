@@ -1,0 +1,8 @@
+en:
+  filters:
+    home: "Home"
+  js:
+    admin:
+      dl_custom_homepage:
+    dl_custom_homepage:
+      title: "Custom Homepage"

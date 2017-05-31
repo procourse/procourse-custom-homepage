@@ -1,0 +1,11 @@
+plugins:
+  dl_custom_homepage_enabled:
+    default: true
+    client: true
+  dl_custom_homepage_license_key:
+    default: ""
+    client: false
+  dl_custom_homepage_licensed:
+    default: false
+    client: true
+    hidden: true
