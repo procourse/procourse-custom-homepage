@@ -1,6 +1,7 @@
 en:
   filters:
-    home: "Home"
+    home:
+      title: "Home"
   js:
     admin:
       dl_custom_homepage:

@@ -9,6 +9,7 @@ export function setup(helper) {
                   'button.btn btn-danger',
                   'ul.nav',
                   'ul.nav-pills',
-                  'ul.nav nav-pills'
+                  'ul.nav nav-pills',
+                  'li.active'
                   ]);
 }
