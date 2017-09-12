@@ -8,6 +8,7 @@ en:
       dl_custom_homepage:
     dl_custom_homepage:
       title: "Custom Homepage"
+      not_licensed_page: 'Sorry about this. It looks like the Custom Homepage plugin is not licensed. You can <a href="https://discourseleague.com/league/l/6780">pick up a license key here</a>.'
     filters:
       home:
         title: "Home"

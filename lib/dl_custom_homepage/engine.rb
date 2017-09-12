@@ -6,7 +6,25 @@ module DlCustomHomepage
   		Discourse::Application.routes.append do
   			mount ::DlCustomHomepage::Engine, at: "/dl-custom-homepage"
   		end
+      module ::Jobs
+        class CustomHomepageConfirmValidKey < Jobs::Scheduled
+          every 1.days
+
+          def execute(args)
+            validate_url = "https://discourseleague.com/licenses/validate?id=60249&key=" + SiteSetting.dl_custom_homepage_license_key
+            request = Net::HTTP.get(URI.parse(validate_url))
+            result = JSON.parse(request)
+            if result["enabled"]
+              SiteSetting.dl_custom_homepage_licensed = true
+            else
+              SiteSetting.dl_custom_homepage_licensed = false
+            end
+          end
+
+        end
+      end
     end
+
   end
 end
 

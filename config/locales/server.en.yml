@@ -2,3 +2,5 @@ en:
   site_settings: 
     dl_custom_homepage_enabled: 'Enable your custom homepage at <a href="/admin/plugins/dl-custom-homepage">/admin/plugins/dl-custom-homepage</a>'
     dl_custom_homepage_license_key: 'Enter your license key to unlock premium features. Get a license key at <a href="https://discourseleague.com/dl-custom-homepage">discourseleague.com/dl-custom-homepage</a>.'
+  dl_custom_homepage:
+    not_licensed_page: 'Sorry about this. It looks like the Custom Homepage plugin is not licensed. You can <a href="https://discourseleague.com/league/l/6780">pick up a license key here</a>.'
