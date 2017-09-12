@@ -2,8 +2,13 @@ en:
   filters:
     home:
       title: "Home"
+      help: "homepage for the site"
   js:
     admin:
       dl_custom_homepage:
     dl_custom_homepage:
       title: "Custom Homepage"
+    filters:
+      home:
+        title: "Home"
+        help: "homepage for the site"
