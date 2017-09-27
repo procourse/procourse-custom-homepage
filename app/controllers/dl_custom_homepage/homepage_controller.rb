@@ -11,7 +11,7 @@ module DlCustomHomepage
       if !homepage.empty?
         render_json_dump(homepage)
       else
-        render nothing: true, status: 404
+        render body: nil, status: 404
       end
 
     end
