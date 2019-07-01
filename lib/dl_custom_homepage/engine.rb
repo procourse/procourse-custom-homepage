@@ -31,7 +31,14 @@ end
 require 'open-uri'
 require 'net/http'
 
-DiscourseEvent.on(:site_setting_saved) do |site_setting|
+event =
+  if Gem::Version.new(Discourse::VERSION::STRING) > Gem::Version.new("2.3.0.beta8")
+    :site_setting_changed
+  else
+    :site_setting_saved
+  end
+
+DiscourseEvent.on(event) do |site_setting|
   if site_setting.name.to_s == "dl_custom_homepage_license_key" && site_setting.value_changed?
 
     if site_setting.value.empty?
